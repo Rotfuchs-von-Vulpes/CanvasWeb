@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Formiga de Langton</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="stylesheet" href="canvas.css"></link>
+</head>
+<body>
+    <h1>Formiga de Langton</h1>
+    <h2>simples automato celular</h2>
+    <canvas id="lua" width="800" height="700"></canvas>
+    <div id='int'>
+        <p>0</p>
+    </div>
+    <form>
+        <label>adicionar cor</label><br>
+        <input type='color' id="color">
+        <input type="checkbox" id="direction">
+        <input type="button" value='adicionar' onclick="addColor(document.getElementById('color'), document.getElementById('direction'))"><br>
+        <label>reproduzir</label><br>
+        <input type="button" value='run' onclick="run()">
+    </form>
+    <div id='list'></div>
+    <script src="vulpes.js"></script>
+    <script src="LUA.js"></script>
+    <script src="edit.js"></script>
+</body>

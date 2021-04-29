@@ -1,0 +1,11 @@
+body {
+  font-family: Arial;
+  background: rgb(29, 30, 32);
+  margin-left: 100px;
+  color: rgb(159, 160, 162);
+}
+
+p {
+  margin-left: 5px;
+  color: rgb(159, 160, 162);
+}

@@ -1,0 +1,64 @@
+* {
+  font-family: Arial;
+  padding: 0px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  --site-box-width: 285px;
+  --site-box-height: 176px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-auto-rows: calc(var(--site-box-height) + 20px);
+}
+
+#container > a > div {
+  margin: 10px;
+  background-size: calc(var(--site-box-width) + 300px);
+  background-position: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: right;
+  width: var(--site-box-width);
+  height: var(--site-box-height);
+  transition: 100ms;
+}
+
+#container > a > div > p {
+  margin: 10px;
+}
+
+#container > a > div:hover {
+  margin: 5px;
+  width: calc(var(--site-box-width) + 10px);
+  height: calc(var(--site-box-height) + 10px);
+  cursor: pointer;
+}
+
+.requirements {
+  margin-left: 30px;
+}
+
+.item {
+  display: grid;
+  grid: repeat(auto-fill, 100%) / 25px 90%;
+}
+
+.checkbox {
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+}
+
+a {
+  margin: 10px;
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: default;
+}
