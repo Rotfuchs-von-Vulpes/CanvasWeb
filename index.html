@@ -1,72 +1,36 @@
 <!DOCTYPE html>
+<!--CUIDADO! gambiarra a seguir-->
 <html>
-  <head>
-    <meta charset="UTF8" />
-    <title>Formulário</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="main.js"></script>
-  </head>
-  <body>
-    <form id="form" class="form">
-      <div>
-        <input
-          id="nick"
-          class="nick"
-          type="text"
-          placeholder="Ex.: Heimirich Fuchs von Braun"
-          maxlength="225"
-          autocomplete="off"
-          onkeyup="mask(this, ['x'])"
-          onchange="message(this, '')"
-        />
-        <label>Nome ou apelido</label>
-        <p id="nick label"></p>
-      </div>
-      <div>
-        <input
-          id="mail"
-          class="mail"
-          type="email"
-          placeholder="Ex.: Vulpes@vulpes.com"
-          maxlength="64"
-          autocomplete="off"
-          onchange="message(this, '')"
-        />
-        <label>Email</label>
-        <p id="mail label"></p>
-      </div>
-      <div>
-        <input
-          id="phone"
-          class="phone"
-          type="tel"
-          placeholder="Ex.: (47)3267-5225"
-          maxlength="14"
-          autocomplete="off"
-          onkeyup="mask(this, ['0000-0000','00000-0000' ,'(00)0000-0000', '(00)00000-0000'])"
-          onchange="message(this, '')"
-        />
-        <label>Numero de telefone</label>
-        <p id="phone label"></p>
-      </div>
-      <div>
-        <input
-          id="cpf"
-          class="cpf"
-          type="text"
-          placeholder="Ex.: 123.456.789-09"
-          maxlength="14"
-          autocomplete="off"
-          onkeyup="mask(this, ['000.000.000-00'])"
-          onchange="message(this, '')"
-        />
-        <label>CPF</label>
-        <p id="cpf label"></p>
-      </div>
-      <div>
-        <input id="enviar" type="button" value="enviar" onclick="register()"/>
-      </div>
-      <p id="form label"></p>
-    </form>
-  </body>
+
+<head>
+  <title>Canvas Web</title>
+  <meta charset="UTF8" />
+  <link rel="stylesheet" href="Styles/masterStyle.css">
+  </link>
+</head>
+
+<body>
+  <div class="requirements">
+    <div class="item">
+      <div class="checkbox" style="background: white;" id="Autômato celular" onclick="updateList(this)"></div>
+      <label>Autômato celular</label>
+    </div>
+    <div class="item">
+      <div class="checkbox" style="background: white;" id="Fractal" onclick="updateList(this)"></div>
+      <label>Fractal</label>
+    </div>
+    <div class="item">
+      <div class="checkbox" style="background: white;" id="Jogo" onclick="updateList(this)"></div>
+      <label>Jogo</label>
+    </div>
+    <div class="item">
+      <div class="checkbox" style="background: white;" id="Plano de fundo" onclick="updateList(this)"></div>
+      <label>Plano de fundo</label>
+    </div>
+  </div>
+  <div id="container">
+  </div>
+  <script src="vulpesPOG.js"></script>
+</body>
+
 </html>
